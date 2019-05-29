@@ -3,6 +3,11 @@ import './App.css';
 import Product from './components/Product.js'
 
 class App extends Component {
+
+  clickMe() {
+    console.log('tester handling event');
+  }
+
   render() {
     let products = [
       {
@@ -45,8 +50,8 @@ class App extends Component {
           {items}
         </div>
         <div>
-          <button>
-            click me!
+          <button onClick={ this.clickMe }>
+            Click Me Please!
           </button>
         </div>
       </div>
