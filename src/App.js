@@ -41,9 +41,14 @@ class App extends Component {
     return (
       <div>
       Props
-      <div>
-        {items}
-      </div>
+        <div>
+          {items}
+        </div>
+        <div>
+          <button>
+            click me!
+          </button>
+        </div>
       </div>
     );
   }
