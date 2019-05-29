@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Product from './components/Product.js'
 
@@ -31,6 +30,7 @@ class App extends Component {
 
     let items = products.map((product, index) => {
       return <Product 
+              key={product.id}
               image={product.image}
               price={product.price}
               >
